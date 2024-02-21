@@ -1,4 +1,4 @@
-FROM golang:1.22.0-alpine3.19 as builder
+FROM golang:1.14.6-alpine3.12 as builder
 COPY go.mod go.sum /go/src/github.com/abezzi/delta-restaurant-api/
 WORKDIR /go/src/github.com/abezzi/delta-restaurant-api
 RUN go mod download
